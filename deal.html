@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>صفقة كرتون ماء</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">⬅ العودة</a>
+  <a href="cart.html" class="nav-btn">🛒 سلة الشراء</a>
+</header>
+
+<div class="deal-container">
+
+  <div class="deal-image">
+    <img src="assets/images/placeholder.png" alt="كرتون ماء">
+  </div>
+
+  <div class="deal-info">
+    <h2>كرتون ماء</h2>
+    <p class="old-price">السعر الأصلي: 60 ريال</p>
+    <p class="price">سعر الصفقة: 40 ريال</p>
+
+    <p>الحد الأدنى لتفعيل الصفقة: 100 قطعة</p>
+    <p>الحد الأقصى: 500 قطعة</p>
+
+    <p>تم شراء: <span id="current">120</span> قطعة</p>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div id="countdown" class="timer"></div>
+
+    <div class="qty-box">
+      <button onclick="changeQty(-1)">-</button>
+      <input id="qty" type="number" value="1" min="1" max="20">
+      <button onclick="changeQty(1)">+</button>
+    </div>
+
+    <button class="btn" onclick="joinDeal()">انضم للصفقة</button>
+    <button class="btn" onclick="addToCart()">أضف إلى السلة 🛒</button>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
