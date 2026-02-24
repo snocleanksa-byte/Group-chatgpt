@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>لوحة البائع</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <aside>
+    <h3>لوحة البائع</h3>
+    <ul>
+      <li>📦 إدارة المنتجات</li>
+      <li>🔥 إدارة الصفقات</li>
+      <li>🛒 الطلبات</li>
+      <li>💰 الأرباح</li>
+    </ul>
+  </aside>
+
+  <main>
+    <h2>مرحبًا بك، بائعنا العزيز</h2>
+    <h3>إضافة صفقة جديدة</h3>
+    <input id="deal-name" placeholder="اسم المنتج">
+    <input id="deal-price" type="number" placeholder="السعر">
+    <input id="deal-max" type="number" placeholder="الحد الأقصى">
+    <button class="btn" onclick="addDeal()">إضافة الصفقة</button>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
